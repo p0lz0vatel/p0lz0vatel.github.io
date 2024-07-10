@@ -1,22 +1,5 @@
 <style>
-  .NewPageCover__texts {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-}
-
-user agent stylesheet
-div {
-    display: block;
-    unicode-bidi: isolate;
-}
-style attribute {
-    --outsideColumns: 4;
-}
-.NewPageCover--m-scheme-light {
-    background: var(--background-content-light);
-    color: var(--text-primary-light);
+  element.style {
 }
 body, body[data-theme=light] {
     --background_light_gradient: linear-gradient(180deg,#f7f9fb,rgba(238,242,245,.8) 116.16%);
@@ -39,6 +22,9 @@ body, body[data-theme=light] {
     --icon_light_secondary: rgba(236,240,243,.8);
     --icon_dark_primary: #02a8fb;
     --light_border: rgba(114,138,150,.24);
+}
+body.scheme--m-light {
+    background: var(--background-page-light);
 }
 body {
     --accent-light: #0098ea;
@@ -113,11 +99,13 @@ body, html {
     font-feature-settings: "liga" 1, "calt" 1;
     font-weight: 400.3;
 }
+user agent stylesheet
+body {
+    display: block;
+    margin: 8px;
+}
 :root {
     --swiper-theme-color: #007aff;
-}
-body ::selection {
-    background: var(--light-selection);
 }
 ::selection {
     background: var(--icon_light_secondary);
