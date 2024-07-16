@@ -6,6 +6,8 @@
 }
 
 .main-container {
+  width: 20%;
+  max-width: 720px;
   overflow: hidden;
 }
 
