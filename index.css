@@ -30,6 +30,7 @@ button {
   background: rgba(0, 0, 0, 0);
 }
 .background {
+  display: flex;
   position: absolute;
   width: 728px;
   height: 1878px;
@@ -39,6 +40,7 @@ button {
   border-radius: 20px;
 }
 .profile-group {
+  display: flex;
   position: absolute;
   width: 705px;
   height: 374px;
@@ -48,6 +50,7 @@ button {
   z-index: 66;
 }
 .background-1 {
+  display: flex;
   position: absolute;
   width: 705px;
   height: 374px;
@@ -58,6 +61,7 @@ button {
   border-radius: 20px;
 }
 .logo {
+  display: flex;
   position: absolute;
   width: 320px;
   height: 254px;
@@ -103,6 +107,7 @@ button {
   overflow: hidden;
 }
 .wpn-instruction {
+  display: flex;
   flex-shrink: 0;
   flex-basis: auto;
   position: relative;
@@ -117,6 +122,7 @@ button {
   z-index: 72;
 }
 .emoji {
+  display: flex;
   position: absolute;
   width: 28px;
   height: 28px;
@@ -128,6 +134,7 @@ button {
   z-index: 70;
 }
 .day-count-group {
+  display: flex;
   position: absolute;
   width: 705px;
   height: 110px;
@@ -137,6 +144,7 @@ button {
   z-index: 60;
 }
 .background-2 {
+  display: flex;
   position: absolute;
   width: 705px;
   height: 110px;
@@ -181,6 +189,7 @@ button {
   z-index: 63;
 }
 .calendar-day {
+  display: flex;
   position: absolute;
   width: 55px;
   height: 55px;
@@ -190,6 +199,7 @@ button {
   overflow: hidden;
 }
 .union {
+  display: flex;
   position: relative;
   width: 45.833px;
   height: 48.125px;
@@ -200,6 +210,7 @@ button {
   z-index: 65;
 }
 .topup-group {
+  display: flex;
   position: absolute;
   width: 711px;
   height: 343px;
@@ -209,6 +220,7 @@ button {
   z-index: 36;
 }
 .background-3 {
+  display: flex;
   position: absolute;
   width: 705px;
   height: 343px;
@@ -290,6 +302,7 @@ button {
   border-radius: 30px;
 }
 .anim-obj {
+  display: flex;
   flex-shrink: 0;
   position: absolute;
   width: 15px;
@@ -304,6 +317,7 @@ button {
   border-radius: 50%;
 }
 .image {
+  display: flex;
   flex-shrink: 0;
   position: absolute;
   width: 41px;
