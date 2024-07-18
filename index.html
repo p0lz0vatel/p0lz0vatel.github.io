@@ -344,14 +344,14 @@
             var refactor_count = Number(coins_count);
             
             if(refactor_count > 10){
-              let label = `${tg.initDataUnsafe.user.id}_${new Date().toISOString().replace(/:/g, '-').replace('T', '-').replace('Z', '')}`.replace(".", "");
+              let label = `${'123'}_${new Date().toISOString().replace(/:/g, '-').replace('T', '-').replace('Z', '')}`.replace(".", "");
               let payment_url = "https://yoomoney.ru/quickpay/confirm.xml?receiver=4100118742841217&quickpay-form=shop&targets=WayPn&paymentType=SB&sum=" + refactor_count + "&label=" + label;
 
               let data = {
                 amount: refactor_count,
                 label: label
               }
-              tg.sendData(JSON.stringify(data));
+              //tg.sendData(JSON.stringify(data));
               
               console.log(data);
               console.log(payment_url);
