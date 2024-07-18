@@ -1496,7 +1496,7 @@ section {
   height: 100%;
   background: #03C74C;
   border-radius: 100%;
-  transform: translate3d(0, 150%, 0) scale(1.8);
+  transform: translate3d(0, 160%, 0) scale(1.8);
   transition: transform 0.45s;
 }
 
