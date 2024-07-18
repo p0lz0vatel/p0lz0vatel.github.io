@@ -1490,7 +1490,7 @@ section {
 .top-up-button__blob {
   position: absolute;
   top: 2px;
-  width: 25%;
+  width: 50%;
   height: 100%;
   background: #03C74C;
   border-radius: 100%;
