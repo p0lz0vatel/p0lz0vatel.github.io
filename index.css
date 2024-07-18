@@ -1791,11 +1791,11 @@ color: #fff; /* adjust the text color as needed */
 }
 
 .input-balance {
-  position: relative;
+  position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: calc(298 * var(--rpx));
+  height: calc(78 * var(--rpx));
   padding: 20px;
   border: none;
   border-radius: 10px;
