@@ -325,12 +325,14 @@
 
       <script>
         // const data = Telegram.WebApp.getData();
-        let tg = window.Telegram.WebApp;
-
-        init_data = tg.initData
+        const urlParams = new URLSearchParams(window.location.search);
+        const customData = {
+          chatId: urlParams.get('chatid'),
+          balance: urlParams.get('balance'),
+        };
 
         const balance_text = document.querySelector('.balance-text');
-        balance_text.innerHTML = init_data;
+        balance_text.innerHTML = balance;
       </script>
       
       <script>
