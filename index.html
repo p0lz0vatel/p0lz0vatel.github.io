@@ -327,7 +327,7 @@
         // const data = Telegram.WebApp.getData();
         let tg = window.Telegram.WebApp;
 
-        init_data = JSON.parse(tg.initData)
+        init_data = tg.initData
 
         const balance_text = document.querySelector('.balance-text');
         balance_text.innerHTML = init_data;
