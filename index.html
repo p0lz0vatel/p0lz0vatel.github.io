@@ -329,10 +329,14 @@
         const customData = {
           chatId: urlParams.get('chatid'),
           balance: urlParams.get('balance'),
+          days: urlParams.get('days')
         };
 
         const balance_text = document.querySelector('.balance-text');
-        balance_text.innerHTML = customData["balance"];
+        const days_text = document.querySelector('.days-data');
+
+        balance_text.innerHTML = customData["balance"] + " WPN";
+        days_text.innerHTML = customData["days"] + " Дней ";
       </script>
       
       <script>
