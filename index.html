@@ -325,9 +325,10 @@
 
       <script>
         // const data = Telegram.WebApp.getData();
+        let tg = window.Telegram.WebApp;
 
         const balance_text = document.querySelector('.balance-text');
-        balance_text.innerHTML = "180 WPN";
+        balance_text.innerHTML = tg.initData;
       </script>
       
       <script>
