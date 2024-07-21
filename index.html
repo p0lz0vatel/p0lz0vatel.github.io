@@ -309,12 +309,6 @@
           });
         });
 
-      </script>
-        const data = Telegram.WebApp.getData();
-
-        document.getElementById('balance').innerHTML = data["balance"];
-      <script>
-
         const coinButtons = document.querySelectorAll('.coins,.coins-7,.coins-a,.coins-e');
         const inputBalance = document.getElementById('input-balance');
 
@@ -329,9 +323,11 @@
 
       <script src="https://telegram.org/js/telegram-web-app.js"></script>
 
-      <script>
-        
       </script>
+        const data = Telegram.WebApp.getData();
+
+        document.getElementById('balance').innerHTML = data["balance"];
+      <script>
       
       <script>
         
