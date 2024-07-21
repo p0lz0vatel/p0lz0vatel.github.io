@@ -26,7 +26,7 @@
         <div class="background-1"></div>
         <div class="logo"></div>
         
-        <span class="balance-text" id="balance">0 WPN</span>
+        <span class="balance-text">0 WPN</span>
         
         <!-- <div class="instruction-button-wpn">
           <span class="wpn-instruction">Что такое WPN?</span>
@@ -326,7 +326,8 @@
       <script>
         const data = Telegram.WebApp.getData();
 
-        document.getElementById('balance').innerHTML = data["balance"];
+        const balance_text = document.querySelector('.balance-text');
+        balance_text.innerHTML = data["balance"];
       </script>
       
       <script>
