@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    
+    <title>wayPN</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kadwa:wght@400&display=swap" />
+    <link rel="stylesheet" href="index.css" />
+    
+
+  </head>
+  <body>
+    <div class="main-container">
+
+      
+
+      <section class="profile-group hidden" id="section">
+
+        <div class="background-1"></div>
+        <div class="logo"></div>
+        <span class="balance-text">0 WPN</span>
+        <div class="instruction-button-wpn">
+          <button id="instruction-btn-id" class="text-f">Что такое WPN?</button>
+        </div>
+        
+        <div class="emoji"></div>
+
+      </section>
+
+
+      <section class="day-count-group hidden" id="section">
+      
+        <div class="background-2"></div>
+        <span class="days-data">0 Дней </span>
+        <span class="days-title">С нами уже</span>
+        <div class="calendar-day"><div class="union"></div></div>
+      
+      </section>
+      
+      <section class="topup-group hidden" id="section">
+        
+        <div class="background-3"></div>
+        <span class="top-up-balance-title">Пополнить Баланс</span>
+        
+        <button class="coins-input-field">
+          <input type="number" onfocus="this.value=''" id="input-balance" value="90" class="input-balance"></input>
+        </button>
+        
+        <button class="top-up-button" id="topup_button">
+          <span class="text">Пополнить</span>
+          <div class="image"></div>
+          <span class="coins__inner">
+            <span class="coins__blobs">
+              <span class="coins__blob"></span>
+              <span class="coins__blob"></span>
+              <span class="coins__blob"></span>
+              <span class="coins__blob"></span>
+            </span>
+          </span>
+        </button>
+        <br/>
+
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+          <defs>
+            <filter id="goo">
+              <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+              <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo"></feColorMatrix>
+              <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+            </filter>
+          </defs>
+        </svg>
+
+        
+        <div class="coin-buttons">
+
+            <button class="coins" id="coin-30">
+              <span class="text-6">30 WPN</span>
+              <span class="coins__inner">
+                <span class="coins__blobs">
+                  <span class="coins__blob"></span>
+                  <span class="coins__blob"></span>
+                  <span class="coins__blob"></span>
+                  <span class="coins__blob"></span>
+                </span>
+              </span>
+            </button>
+            <br/>
+
+          <button class="coins-7" id="coin-60">
+            <span class="text-6">60 WPN</span>
+            <span class="coins__inner">
+              <span class="coins__blobs">
+                <span class="coins__blob"></span>
+                <span class="coins__blob"></span>
+                <span class="coins__blob"></span>
+                <span class="coins__blob"></span>
+              </span>
+            </span>
+          </button>
+          <br/>
+            
+          <button class="coins-a" id="coin-90">
+            <span class="text-c">90 WPN</span>
+            <span class="coins__inner">
+              <span class="coins__blobs">
+                <span class="coins__blob"></span>
+                <span class="coins__blob"></span>
+                <span class="coins__blob"></span>
+                <span class="coins__blob"></span>
+              </span>
+            </span>
+          </button>
+          <br/>
+            
+          
+          <button class="coins-e" id="coin-180">
+            <span class="text-e">180 WPN</span>
+            <span class="coins__inner">
+              <span class="coins__blobs">
+                <span class="coins__blob"></span>
+                <span class="coins__blob"></span>
+                <span class="coins__blob"></span>
+                <span class="coins__blob"></span>
+              </span>
+            </span>
+          </button>
+          <br/>
+      
+          <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <defs>
+              <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo"></feColorMatrix>
+                <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+              </filter>
+            </defs>
+          </svg>
+
+        </div>
+        
+        <div class="promocode-button">
+          <button id="promo-btn" class="text-f">У меня есть Промокод</button>
+        </div>
+      
+      </section>
+
+      <section class="news-group hidden" id="section">
+
+        <div class="back-frame"><div class="background-10"></div></div>
+        <span class="news-title">WayPN</span>
+        <span class="description-title" >Актуальные Новости Проекта</span>
+      </section>
+
+      
+      <section class="keys-group hidden" id="section">
+        
+        <div class="server-group">
+          
+          <span class="servers-title">Серверы</span>
+          
+          <div class="flex-row-a">
+            
+            <span class="region-title">Регион</span>
+            <span class="region-data">Амстердам</span>
+          
+            <div class="image-11"></div>
+          
+          </div>
+          
+          <div class="flex-row-be">
+            
+            <span class="status-title">Статус</span>
+            <span class="status-data">Активный</span>
+        
+            <div class="ellipse"></div>
+        
+          </div>
+        
+        </div>
+        
+        <div class="background-12"></div>
+        
+        <div class="key-group">
+          
+          <span class="key-title">КЛЮЧ ДОСТУПА</span>
+          
+          <div class="flex-row-efe">
+            
+            <div class="background-13"></div>
+            
+            <span class="key-data">ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpiVmF1SnpmSlB1NDBwbklhVG9mYm1U@109.120.154.185:42881/?outline=1</span>
+            
+            <div class="outline-button">
+              
+              <div class="outline-image"></div>  
+              <div class="blur-obj"></div>
+            
+            </div>
+          
+          </div>
+
+          <div ontouchstart="">
+            <button class="btn-inst">
+              <span class="text-instruction">Инструкция</span>
+            </button>
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="ref-container hidden" id="section">
+        <div class="refpromo-group">
+          <div class="background-refgroup">
+            <div class="refsection">
+              <span class="ref-title">Ваша реферальная ссылка</span>
+              <div class="flex-row-fc">
+                <div class="link-text-field">
+                  <span class="text-link">t.me/waypn_bot?start=8951</span>
+                </div>
+                
+                <!-- <button class="link-button">
+                  <span class="link-title">Поделиться</span>
+                  <div class="link-emoji">
+                  </div>
+                </button> -->
+
+                
+                <button class="link-button">
+                  Поделиться
+                  <span class="link-button__inner">
+                    <span class="link-button__blobs">
+                      <span class="link-button__blob"></span>
+                      <span class="link-button__blob"></span>
+                      <span class="link-button__blob"></span>
+                      <span class="link-button__blob"></span>
+                    </span>
+                  </span>
+                </button>
+              
+                
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                  <defs>
+                    <filter id="goo">
+                      <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+                      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo"></feColorMatrix>
+                      <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+                    </filter>
+                  </defs>
+                </svg>
+
+
+              
+              </div>
+            </div>
+            <div class="ref-friend-section">
+              <div class="flex-row-cb">
+                <div class="friend-emoji"><div class="vector"></div></div>
+                <span class="friend-title">Приглашено Друзей:</span
+                ><span class="ref-title-1">7000</span>
+              </div>
+              <div class="flex-row-f">
+                <div class="active-friend-emoji">
+                  <div class="vector-2"></div>
+                </div>
+                <span class="active-friends-title">Активных Друзей:</span
+                ><span class="active-ref-title">70</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+          
+      <script>
+
+        const sections = document.querySelectorAll('section');
+             
+        document.addEventListener("DOMContentLoaded", function() {
+          sections.forEach((section, index) => {
+            section.style.transform = 'translateX(-100%)';
+            section.style.opacity = 0;
+            setTimeout(() => {
+              section.classList.add('show');
+              section.style.transform = 'translateX(0)';
+              section.style.opacity = 1;
+            }, index * 500); // adjust the delay as needed
+          });
+        });
+
+        window.addEventListener("scroll", function() {
+          if (!isFriendButtonClicked) {
+            sections.forEach((section, index) => {
+              const rect = section.getBoundingClientRect();
+              const isVisible = rect.top <= window.innerHeight && rect.bottom >= 0;
+
+              if (isVisible) {
+                section.classList.add('show');
+                section.style.transform = 'translateX(0)';
+                section.style.opacity = 1;
+              } else {
+                section.classList.remove('show');
+                section.style.transform = 'translateX(-100%)';
+                section.style.opacity = 0;
+              }
+            });
+          } else {
+            refFriendGroup.classList.add('show');
+            refFriendGroup.style.transform = 'translateX(0%)'; // changed from 0 to 100%
+            
+          }
+        });
+
+
+      </script>
+
+
+      <script>
+
+        const coinButtons = document.querySelectorAll('.coins,.coins-7,.coins-a,.coins-e');
+        const inputBalance = document.getElementById('input-balance');
+
+        coinButtons.forEach((button) => {
+          button.addEventListener('click', () => {
+            const coinValue = button.textContent.trim().replace(' WPN', '');
+            inputBalance.value = coinValue;
+          });
+        });
+
+      </script>
+
+      <script src="https://telegram.org/js/telegram-web-app.js"></script>
+      
+      <script>
+        
+        function delay(time) {
+          return new Promise(resolve => setTimeout(resolve, time));
+        }
+
+        
+        let tg = window.Telegram.WebApp;
+        let topup_button = document.getElementById("topup_button"); // not "top-up-button"
+
+        topup_button.addEventListener("click", () => {
+          let coins_count = document.getElementById("input-balance").value;
+
+          try {
+            var refactor_count = Number(coins_count);
+            
+            if(refactor_count > 10){
+              let label = `${'123'}_${new Date().toISOString().replace(/:/g, '-').replace('T', '-').replace('Z', '')}`.replace(".", "");
+              let payment_url = "https://yoomoney.ru/quickpay/confirm.xml?receiver=4100118742841217&quickpay-form=shop&targets=WayPn&paymentType=SB&sum=" + refactor_count + "&label=" + label;
+
+              let data = {
+                amount: refactor_count,
+                label: label
+              }
+              //tg.sendData(JSON.stringify(data));
+              
+              console.log(data);
+              console.log(payment_url);
+
+              delay(1000);
+
+              window.location.href = payment_url;
+            }
+
+          } catch (error) {
+            console.log(error);
+          }
+           
+          
+
+        });
+        
+      </script>
+
+      <script>
+        const keyDataElement = document.querySelector('.key-data');
+
+        keyDataElement.addEventListener('click', () => {
+          const text = keyDataElement.textContent;
+          const textarea = document.createElement('textarea');
+          textarea.value = text;
+          document.body.appendChild(textarea);
+          textarea.select();
+          document.execCommand('copy');
+          document.body.removeChild(textarea);
+        });
+
+
+        const LinkDataElement = document.querySelector('.text-link');
+
+        LinkDataElement.addEventListener('click', () => {
+          const text = LinkDataElement.textContent;
+          const textarea = document.createElement('textarea');
+          textarea.value = text;
+          document.body.appendChild(textarea);
+          textarea.select();
+          document.execCommand('copy');
+          document.body.removeChild(textarea);
+        });
+      </script>
+     
+     <script>
+
+        let url = "https://htmlcolorcodes.com/";
+        let url_tg = "https://t.me/share/url?url=https://htmlcolorcodes.com/"
+        const newsGroup = document.querySelector('.news-group');
+        const newsTextElements = newsGroup.querySelectorAll('span');
+        const insButton = document.querySelector('.instruction-button-wpn');
+        const shareButton = document.querySelector('.link-button');
+        
+        newsGroup.addEventListener('click', () => {
+          window.location.href = url; // replace with your desired URL
+        });
+
+        newsTextElements.forEach((textElement) => {
+          textElement.addEventListener('click', () => {
+            window.location.href = url; // replace with your desired URL
+          });
+        });
+
+        insButton.addEventListener('click', () => {
+          window.location.href = url; // replace with your desired URL
+        });
+
+        shareButton.addEventListener('click', () => {
+          window.location.href = url; // replace with your desired URL
+        });
+
+        
+
+      </script>
+    </div>
+    
+
+
+
+
+  </body>
+</html>
