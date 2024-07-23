@@ -435,26 +435,18 @@
       </script>
       
       <script>
-        const checkThemeDiv = document.querySelector('.checkTheme');
-        const backgroundAllElements = document.querySelectorAll('.background-all');
-
-        function updateBackgroundAll() {
-          const checkThemeStyles = getComputedStyle(checkThemeDiv);
-          const bgColor = checkThemeStyles.backgroundColor;
-          const textColor = checkThemeStyles.color;
-
-          backgroundAllElements.forEach((element) => {
-            if (bgColor === 'rgb(23, 33, 43)') {
-              element.style.backgroundColor = '#ffffff';
-              element.style.color = '#000000';
-            } else {
-              element.style.backgroundColor = '#000000';
-              element.style.color = '#ffffff';
-            }
+        const checkTheme = document.querySelector('.checkTheme');
+        const sections = document.querySelectorAll('section');
+      
+        const themeBgColor = getComputedStyle(checkTheme).backgroundColor;
+        const isDarkTheme = themeBgColor === 'rgb(23, 33, 43)'; // #17212b in rgb format
+      
+        sections.forEach((section) => {
+          const backgrounds = section.querySelectorAll('[class*="background-"]');
+          backgrounds.forEach((background) => {
+            background.style.backgroundColor = isDarkTheme ? '#000000' : '#ffffff';
           });
-        }
-
-        updateBackgroundAll();
+        });
       </script>
 
     </div>
