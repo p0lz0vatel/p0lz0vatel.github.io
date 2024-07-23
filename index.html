@@ -433,21 +433,6 @@
           window.location.href = url; // replace with your desired URL
         });
       </script>
-      
-      <script>
-        const checkTheme = document.querySelector('.checkTheme');
-        const sections = document.querySelectorAll('section');
-      
-        const themeBgColor = getComputedStyle(checkTheme).backgroundColor;
-        const isDarkTheme = themeBgColor === 'rgb(23, 33, 43)'; // #17212b in rgb format
-      
-        sections.forEach((section) => {
-          const backgrounds = section.querySelectorAll('[class*="background-"]');
-          backgrounds.forEach((background) => {
-            background.style.backgroundColor = isDarkTheme ? '#000000' : '#ffffff';
-          });
-        });
-      </script>
 
     </div>
     
