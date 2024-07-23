@@ -435,13 +435,6 @@
             if(refactor_count > 10){
               let payment_url = "https://yoomoney.ru/quickpay/confirm.xml?receiver=4100118742841217&quickpay-form=shop&targets=WayPn&paymentType=SB&sum=" + refactor_count + "&label=" + customData["chatId"];
 
-              let data = {
-                amount: refactor_count,
-                label: label
-              }
-              //tg.sendData(JSON.stringify(data));
-              
-              console.log(data);
               console.log(payment_url);
 
               window.location.href = payment_url;
