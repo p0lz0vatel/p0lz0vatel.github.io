@@ -1814,7 +1814,8 @@ color: #FF9900; /* adjust the text color as needed */
   text-align: left;
   white-space: nowrap;
 
-  border: calc(1.5 * var(--rpx)) solid #f1f1f1;
+  border: calc(3 * var(--rpx)) solid var(--tg-theme-text-color);
+  border-radius: calc(20 * var(--rpx));
 }
 
 .input-balance {
