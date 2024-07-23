@@ -860,7 +860,7 @@ button {
   height: calc(152 * var(--rpx));
   top: 50%;
   left: 0;
-  background: var(--tg-theme-bg-color);
+  background: #151618;
   transform: translate(0, -50%);
   z-index: 17;
   border-color: #000000
@@ -1833,7 +1833,7 @@ color: #FF9900; /* adjust the text color as needed */
   background-color: transparent;
   cursor: pointer;
   text-align: left;
-  color: #9FB1C2;
+  color: var(--tg-theme-text-color);
 
 }
 
