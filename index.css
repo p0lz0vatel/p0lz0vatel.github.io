@@ -61,7 +61,7 @@ button {
   height: calc(374 * var(--rpx));
   top: 0;
   left: 0;
-  background: #000000;
+  background: var(--tg-theme-bg-color);
   z-index: 67;
   border-radius: calc(20 * var(--rpx));
 }
@@ -151,7 +151,7 @@ button {
   height: calc(110 * var(--rpx));
   top: 0;
   left: 0;
-  background: #000000;
+  background: var(--tg-theme-bg-color);
   z-index: 61;
   border-radius: calc(20 * var(--rpx));
 }
@@ -224,7 +224,7 @@ button {
   height: calc(343 * var(--rpx));
   top: 0;
   left: 0;
-  background: #000000;
+  background: var(--tg-theme-bg-color);
   z-index: 37;
   border-radius: calc(20 * var(--rpx));
 }
@@ -819,7 +819,7 @@ button {
   height: calc(586 * var(--rpx));
   top: 0;
   left: 0;
-  background: #000000;
+  background: var(--tg-theme-bg-color);
   z-index: 12;
   border-radius: calc(20 * var(--rpx));
 }
@@ -1013,7 +1013,7 @@ button {
   min-width: 0;
   height: calc(110 * var(--rpx));
   cursor: pointer;
-  background: #000000;
+  background: var(--tg-theme-bg-color);
   border: none;
   z-index: 3;
   border-radius: calc(20 * var(--rpx));
@@ -1062,7 +1062,7 @@ button {
   min-width: 0;
   height: calc(110 * var(--rpx));
   cursor: pointer;
-  background: #000000;
+  background: var(--tg-theme-bg-color);
   border: none;
   z-index: 7;
   border-radius: calc(20 * var(--rpx));
@@ -1765,7 +1765,7 @@ section {
 }
 
 .promocode-button button#promo-btn {
-  background-color: #000000;
+  background-color: var(--tg-theme-bg-color);
   border: none;
   color: #9FB1C2; /* adjust the text color as needed */
   cursor: pointer;
@@ -1781,7 +1781,7 @@ section {
 
 
 .instruction-button-wpn button#instruction-btn-id {
-  background-color: #000000;
+  background-color: var(--tg-theme-bg-color);
   border: none;
   color: #9FB1C2; /* adjust the text color as needed */
   cursor: pointer;
@@ -1871,7 +1871,7 @@ button {
   height: calc(306 * var(--rpx));
   top: 0;
   left: 0;
-  background: #000000;
+  background: var(--tg-theme-bg-color);
   z-index: 1;
   border-radius: calc(20 * var(--rpx));
 }
