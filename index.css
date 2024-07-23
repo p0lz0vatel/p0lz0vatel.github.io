@@ -1833,7 +1833,7 @@ color: #FF9900; /* adjust the text color as needed */
   background-color: transparent;
   cursor: pointer;
   text-align: left;
-  color: var(--tg-theme-text-color);
+  color: #9FB1C2;
 
 }
 
