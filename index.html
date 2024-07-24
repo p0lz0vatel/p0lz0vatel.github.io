@@ -449,7 +449,7 @@
 
         topup_button.addEventListener("click", () => {
           let coins_count = document.getElementById("input-balance").value;
-          tg_app.showAlert(window.location.href)
+          tg_app.showAlert(window.location.href.toString())
 
           // tg_app.showConfirm("💡 Пополнить на " + coins_count + " WPN", (confirmed) => {
           //   if (confirmed)
