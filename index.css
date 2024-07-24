@@ -1940,21 +1940,20 @@ button {
 .text-link{
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-shrink: 0;
   flex-basis: auto;
   position: relative;
-  width: calc(110 * var(--rpx));
-  height: calc(50 * var(--rpx));
-  color: var(--tg-theme-text-color);
+  width: calc(397 * var(--rpx));
+  height: calc(45 * var(--rpx));
+  color: #9fb1c2;
   font-family: Kadwa, var(--default-font-family);
   font-size: calc(18 * var(--rpx));
   font-weight: 400;
-  line-height: calc(25 * var(--rpx));
+  line-height: calc(45 * var(--rpx));
   text-align: left;
   white-space: nowrap;
-  z-index: 53;
-  margin-right: calc(45 * var(--rpx)); /* add this line */
+  z-index: 15;
 }
 
 .link-button {
