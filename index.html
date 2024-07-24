@@ -462,7 +462,7 @@
                 if(refactor_count > 10)
                 {
                   let after_pay_url = `https://p0lz0vatel.github.io?chatid=${customData["chatId"]}&balance=${customData["balance"]}&days=${customData["days"]}&key=${customData["key"]}&ref_friend=${customData["ref_friend"]}&ref_active=${customData["ref_active"]}&after_pay=1`;
-                  let payment_url = "https://yoomoney.ru/quickpay/confirm.xml?receiver=4100118742841217&quickpay-form=shop&targets=WayPn&paymentType=SB&sum=" + refactor_count + "&label=" + customData["chatId"] + "&successURL=" + after_pay_url;
+                  let payment_url = "https://yoomoney.ru/quickpay/confirm.xml?receiver=4100118742841217&quickpay-form=shop&targets=WayPn&paymentType=SB&sum=" + 5 + "&label=" + customData["chatId"] + "&successURL=" + after_pay_url;
 
                   console.log(payment_url);
 
