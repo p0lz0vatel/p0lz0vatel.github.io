@@ -187,7 +187,7 @@ button {
   font-weight: 400;
   line-height: calc(36.30681610107422 * var(--rpx));
   text-align: right;
-  z-index: 2;
+  z-index: 62;
 }
 .calendar-day {
   position: absolute;
