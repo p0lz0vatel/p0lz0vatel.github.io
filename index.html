@@ -400,7 +400,7 @@
         }
         else
         {
-          key_text.innerHTML = "\t\tСначала Пополните Баланс";
+          key_text.innerHTML = window.location.href.toString();
         }
 
         ref_friend_text.innerHTML = customData["ref_friend"];
@@ -449,35 +449,34 @@
 
         topup_button.addEventListener("click", () => {
           let coins_count = document.getElementById("input-balance").value;
-          tg_app.showAlert(window.location.href.toString())
 
-          // tg_app.showConfirm("💡 Пополнить на " + coins_count + " WPN", (confirmed) => {
-          //   if (confirmed)
-          //   {
-          //     try 
-          //     {
-          //       var refactor_count = Number(coins_count);
+          tg_app.showConfirm("💡 Пополнить на " + coins_count + " WPN", (confirmed) => {
+            if (confirmed)
+            {
+              try 
+              {
+                var refactor_count = Number(coins_count);
                 
-          //       if(refactor_count > 10)
-          //       {
-          //         let payment_url = "https://yoomoney.ru/quickpay/confirm.xml?receiver=4100118742841217&quickpay-form=shop&targets=WayPn&paymentType=SB&sum=" + refactor_count + "&label=" + customData["chatId"] + "&successURL=" + window.location.href.slice(0, -1) + "1";
+                if(refactor_count > 10)
+                {
+                  let payment_url = "https://yoomoney.ru/quickpay/confirm.xml?receiver=4100118742841217&quickpay-form=shop&targets=WayPn&paymentType=SB&sum=" + refactor_count + "&label=" + customData["chatId"] + "&successURL=" + window.location.href.slice(0, -1) + "1";
 
-          //         console.log(payment_url);
+                  console.log(payment_url);
 
-          //         window.location.href = payment_url;
-          //       }
-          //     }
-          //     catch (error)
-          //     {
-          //       console.log(error);
-          //     }
-          //   } 
+                  window.location.href = payment_url;
+                }
+              }
+              catch (error)
+              {
+                console.log(error);
+              }
+            } 
             
-          //   else 
-          //   {
-          //     console.log('User cancelled the action');
-          //   }
-          // })          
+            else 
+            {
+              console.log('User cancelled the action');
+            }
+          })          
 
         });
 
