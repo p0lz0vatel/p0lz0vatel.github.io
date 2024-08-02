@@ -348,6 +348,8 @@
           document.body.removeChild(textarea);
 
           tg_app.showAlert("🔑 Ключ Скопирован!");
+
+          window.location.href = 'outline://';
         });
 
 
@@ -466,23 +468,7 @@
         });
 
         outlineButton.addEventListener('click', () =>{
-            if(userAgent.includes('Android')){
-                window.location.href = url_outline_android;
-            }
-            else if(userAgent.includes('iPhone') || userAgent.includes('iPad'))
-            {
-              window.location.href = url_outline_ios;
-            }
-            else if(userAgent.includes('Windows'))
-            {
-              window.location.href = url_outline_microsoft;
-            }
-            else if(userAgent.includes('Mac OS X'))
-            {
-              window.location.href = url_outline_mac;
-            }else {
-              window.location.href = url_outline_mac;
-            }
+           window.location.href = 'outline://';
         });
 
         coin_30.addEventListener('click', ()=>{
